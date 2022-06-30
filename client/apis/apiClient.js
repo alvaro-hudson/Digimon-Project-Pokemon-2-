@@ -1,6 +1,7 @@
 import request from 'superagent'
 
 const rootUrl = 'https://digimon-api.herokuapp.com/api/digimon/'
+// Shape [{name, img, level}, {...}, ...]
 
 export function getAllDigimon() {
   return request.get(rootUrl).then((res) => {
