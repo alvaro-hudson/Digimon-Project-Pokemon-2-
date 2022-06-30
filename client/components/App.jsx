@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Routes } from 'react-router-dom'
 
 import { fetchFruits } from '../actions'
 
@@ -19,6 +20,9 @@ function App() {
             <li key={fruit}>{fruit}</li>
           ))}
         </ul>
+        <Routes>
+          <route path 
+        </Routes>
       </div>
     </>
   )
