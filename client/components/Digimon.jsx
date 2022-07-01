@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { useParams } from 'react-router-dom'
 import { getAllByLevel } from '../apis/apiClient'
-import { DisplayOne } from './Onedigi'
+// import { DisplayOne } from './Onedigi' // <---- this is wrong
+import DisplayOne from './Onedigi'
 
 const useDigimonByLevel = (level) => {
   const [{ loading, failed, data, message }, setDigimons] = React.useState({ loading: true })
