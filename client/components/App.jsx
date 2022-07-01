@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Routes, Route, useParams } from 'react-router-dom'
 
 import { fetchFruits } from '../actions'
 
@@ -20,6 +21,9 @@ function App() {
           ))}
         </ul>
       </div>
+      <Routes>
+        <Route path="/Digimon/:level" element={<Digimon />} />
+      </Routes>
     </>
   )
 }
