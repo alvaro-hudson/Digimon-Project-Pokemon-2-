@@ -6,9 +6,11 @@ function DisplayOne (props) {
   
   return (
     <div className='DisplayOne'>
-      <img src={img} alt='digimon'/>
+     
       <h1>{name}</h1>
-      <p>{level}</p>
+      
+      <img src={img} alt='digimon' />
+   
 
 
     </div>
