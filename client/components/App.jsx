@@ -15,9 +15,6 @@ function App() {
         <ul>
          <Nav/>
         </ul>
-        <Routes>
-          <route path 
-        </Routes>
       </div>
       <Routes>
         <Route path="/Digimon/:level" element={<Digimon />} />

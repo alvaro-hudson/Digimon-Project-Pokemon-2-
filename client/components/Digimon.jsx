@@ -36,7 +36,11 @@ const Digimon = () => {
     return `Fuck shit: ${message}`
   }
 
-  return data.map(digimon => <h1>digimon.name</h1>)
+  return data.map(digimon => <DigimonView {...digimon} />)
+}
+
+const DigimonView = ({ name, }) => {
+  return <>{name}</>
 }
 
 export default Digimon
