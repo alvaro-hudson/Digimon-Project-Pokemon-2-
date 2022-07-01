@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getAllByLevel } from '../apis/apiClient'
 
 const useDigimonByLevel = (level) => {
-  const [{ loading, failed, data, message }, setDigimons] = useState({ loading: true })
+  const [{ loading, failed, data, message }, setDigimons] = React.useState({ loading: true })
 
   React.useEffect(() => {
     setDigimons({ loading: true })
@@ -36,7 +36,7 @@ const Digimon = () => {
     return `Fuck shit: ${message}`
   }
 
-  return data.map(digimon => <h1>digimon.name</h1>)
+  return data.map(digimon => <h1>{digimon.name}</h1>)
 }
 
 export default Digimon

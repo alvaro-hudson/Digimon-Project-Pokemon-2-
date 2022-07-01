@@ -2,6 +2,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const leveils = ['fresh', 'inTraining', 'rookie', 'champion', 'mega', 'ultimate']
+  
+// < Route path = "/Digimon/:level" element = {< Digimon />} />
+
 
 function Nav() {
   return (
@@ -10,7 +13,7 @@ function Nav() {
       <ul>
         <h3>Pokemon II</h3>
         {leveils.map(leveils =>
-          <Link key={leveils} to={`/level/${leveils}`} > <div><button className="glow-on-hover" type="button">{leveils}</button></div></Link>
+          <Link key={leveils} to={`/Digimon/${leveils}`} > <div><button className="glow-on-hover" type="button">{leveils}</button></div></Link>
         )}
        
       </ul>
