@@ -1,23 +1,33 @@
-import React from 'react'
-import  { getAllByLevel } from '../apis/apiClient' 
+// import React from 'react'
+// import  { getAllByLevel } from '../apis/apiClient' 
+// import { DisplayOne } from './Onedigi'
 
-function showDigimon ({ level }) {
+// function showDigimon ({ level }) {
 
-const [digimon, setDigimon] = useState([])
+// const [digimon, setDigimon] = useState([])
 
-useEffect(() => {
-  getAllByLevel(level)
-    .then(digimon => {
-      setDigimon(digimon)
-    })
-}, [])
+// useEffect(() => {
+//   getAllByLevel(level)
+//     .then(digimon => {
+//       setDigimon(digimon)
+//     })
+// }, [])
 
-return (
+// return (
+//   <div className='digimonz'>
+//    {digimon.map(digimon => {
+//    return <DisplayOne digimon={digimon} /> 
+//    })}
+//   </div>
+// )
+// }
 
 
 
-  <Route path='/Digis/fresh' element={ <Digimon level={'fresh'} />} />
+export default showDigimon
 
-)
 
-}
+
+
+
+
