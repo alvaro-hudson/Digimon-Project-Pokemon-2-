@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="app">
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
+        <h1>POKEMON II</h1>
         <ul>
          <Nav/>
         </ul>
