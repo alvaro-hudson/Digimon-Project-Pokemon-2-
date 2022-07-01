@@ -4,13 +4,15 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 
 import App from './components/App'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 document.addEventListener('DOMContentLoaded', () => {
   render(
-   <Router>
-      <App />
-   </Router>,
-   
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>,
     document.getElementById('app')
   )
 })
