@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useParams } from 'react-router-dom'
 import { getAllByLevel } from '../apis/apiClient'
+import { DisplayOne } from './Onedigi'
 
 const useDigimonByLevel = (level) => {
   const [{ loading, failed, data, message }, setDigimons] = useState({ loading: true })
@@ -36,7 +37,7 @@ const Digimon = () => {
     return `Fuck shit: ${message}`
   }
 
-  return data.map(digimon => <h1>digimon.name</h1>)
+  return data.map(digimon => <DisplayOne digimon={digimon}/>)
 }
 
 export default Digimon
