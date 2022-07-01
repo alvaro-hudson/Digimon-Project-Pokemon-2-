@@ -18,10 +18,10 @@ function Nav() {
        
       </ul>
 
-      {/* <img className="images" src="../images/thanos.webp"></img>
+      <img className="images" src="../images/thanos.webp"></img>
       <img className="fortnite images"  src="../images/fortnite.jpg"></img>
       <img className="images" src="../images/ijggelypuff.jpg"></img>
-      <img className="images" src="../images/bulby.jpeg"></img> */}
+      <img className="images" src="../images/bulby.jpeg"></img>
 
     </div>
   )
