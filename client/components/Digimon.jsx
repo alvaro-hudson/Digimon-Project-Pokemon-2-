@@ -39,10 +39,10 @@ const Digimon = () => {
   }
 
   return (
-    <div>
+    <div className='digimoncontainer'>
 
      {data.map(digimon => <DisplayOne digimon={digimon}/>)}
-     <Link to={'/'}><button>Home</button></Link>
+     <Link to={'/'}><button className='glow-on-hover'>Home</button></Link>
      </div>
   )
 

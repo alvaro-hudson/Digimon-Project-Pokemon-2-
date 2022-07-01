@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="app">
-        <h1>DIGIMON FINDER:</h1>
+        <h1>Pokemon 2 Electric Boogaloo:</h1>
 
          <Nav/> 
       </div>
