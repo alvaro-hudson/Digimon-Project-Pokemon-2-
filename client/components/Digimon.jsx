@@ -4,7 +4,7 @@ import { getAllByLevel } from '../apis/apiClient'
 import { DisplayOne } from './Onedigi'
 
 const useDigimonByLevel = (level) => {
-  const [{ loading, failed, data, message }, setDigimons] = useState({ loading: true })
+  const [{ loading, failed, data, message }, setDigimons] = React.useState({ loading: true })
 
   React.useEffect(() => {
     setDigimons({ loading: true })
