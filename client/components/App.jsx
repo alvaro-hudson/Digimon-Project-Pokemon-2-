@@ -12,11 +12,9 @@ function App() {
   return (
     <>
       <div className="app">
-        <h1>POKEMON II</h1>
-        <ul>
-         <Nav/>
-        </ul>
-       
+        <h1>DIGIMON FINDER:</h1>
+
+         <Nav/> 
       </div>
       <Routes>
         <Route path="/Digimon/:level" element={<Digimon />} />
