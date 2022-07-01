@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getAllByLevel } from '../apis/apiClient'
 // import { DisplayOne } from './Onedigi' // <---- this is wrong
 import DisplayOne from './Onedigi'
+import { Link } from 'react-router-dom'
 
 const useDigimonByLevel = (level) => {
   const [{ loading, failed, data, message }, setDigimons] = React.useState({ loading: true })
@@ -31,14 +32,20 @@ const Digimon = () => {
   const { loading, failed, data, message } = useDigimonByLevel(level)
 
   if (loading) {
-    return 'Loading...'
+    return 'Loadinggggg.......'
   }
-
   if (failed) {
     return `Fuck shit: ${message}`
   }
 
-  return data.map(digimon => <DisplayOne digimon={digimon}/>)
+  return (
+    <div>
+
+     {data.map(digimon => <DisplayOne digimon={digimon}/>)}
+     <Link to={'/'}><button>Home</button></Link>
+     </div>
+  )
+
 }
 
 export default Digimon
