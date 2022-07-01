@@ -2,21 +2,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 const leveils = ['fresh', 'inTraining', 'rookie', 'champion', 'mega', 'ultimate']
+  
+// < Route path = "/Digimon/:level" element = {< Digimon />} />
+
 
 function Nav() {
   return (
     <div>
-      <h2>Nav</h2>
+    
       <ul>
         <h3>Pokemon II</h3>
         {leveils.map(leveils =>
-          <Link className="btn-slice" href="#"  key={leveils} to={`/level/${leveils}`}><li> 
-            <div className="top"><span>{leveils} </span></div>
-            <div className="bottom"><span>{leveils} </span></div>
-        </li></Link>
+          <Link key={leveils} to={`/Digimon/${leveils}`} > <div><button className="glow-on-hover" type="button">{leveils}</button></div></Link>
         )}
        
       </ul>
+
+      <img className="images" src="../images/thanos.webp"></img>
+      <img className="fortnite images"  src="../images/fortnite.jpg"></img>
+      <img className="images" src="../images/ijggelypuff.jpg"></img>
+      <img className="images" src="../images/bulby.jpeg"></img>
+
     </div>
   )
 }
