@@ -19,7 +19,7 @@ const useDigimonByLevel = (level) => {
         setDigimons({
           loading: false,
           failed: true,
-          message: "Something's fucked",
+          message: "Something's gone wrong",
         })
       })
   }, [level]) 
@@ -35,13 +35,13 @@ const Digimon = () => {
     return 'Loadinggggg.......'
   }
   if (failed) {
-    return `Fuck shit: ${message}`
+    return `Uh oh: ${message}`
   }
 
   return (
     <div className='digimoncontainer'>
 
-     {data.map(digimon => <DisplayOne digimon={digimon}/>)}
+     {data.map(digimon => <DisplayOne key={digimon.id} digimon={digimon}/>)}
      <Link to={'/'}><button className='glow-on-hover'>Home</button></Link>
      </div>
   )

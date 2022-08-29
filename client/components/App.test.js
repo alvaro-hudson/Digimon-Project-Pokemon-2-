@@ -1,4 +1,3 @@
-import React from 'react'
 import nock from 'nock'
 import {getAllByName }from '../apis/apiClient'
 import { expect } from '@jest/globals'
